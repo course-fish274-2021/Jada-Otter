@@ -1,2 +1,0 @@
-# Jada-Otter
-initial commit
