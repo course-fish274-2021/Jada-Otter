@@ -23,11 +23,10 @@ library(ggplot2)
 #plotting a histogram by fish size
 
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+  geom_histogram(bins = 80)
 
 
-
-
+ggsave("scale_hist_by_length.jpg")
 
 
 
