@@ -1,0 +1,10 @@
+---
+title: "Otter-food-behavior"
+output: html_document
+---
+
+## What?
+
+Analysis of otter behavior with certain foods in a zoo.
+What food do the otters prefer more; trout, mussels, or crab? Do they Share the same food they beg the most for?
+
