@@ -15,3 +15,10 @@ otter_data %>%
   filter(begreceived > 0, totalbeg > 0) %>% 
   select(foodtype, totalbeg)
 
+ggplot(otter_data) +
+  geom_histogram(data = otter_data, aes(x = foodtype, alpha = 0.3))
+  
+
+  geom_histogram(data = otter_data, aes(x = crab, alpha = 0.3))+
+  geom_histogram(data = otter_data, aes(x = mussel, alpha = 0.3))+
+  facet_wrap(~foodtype)
