@@ -464,6 +464,57 @@ head(otter_data)</code></pre>
 ## 5                0
 ## 6                0</code></pre>
 </div>
+<div id="analysis" class="section level2">
+<h2>Analysis</h2>
+<p>What food do the otters prefer more; trout, mussels, or crab? using the columns of data, foodtype, totalbeg and begreceived. making begreceived to be &gt; 0 to exclude trials that did not receive food when they wanted it. making the totalbeg &gt; 0 so I could see if the otters wanted that food or not.</p>
+<pre class="r"><code>begging &lt;-   
+  otter_data %&gt;%
+  filter(begreceived &gt; 0, totalbeg &gt; 0) %&gt;% 
+  select(foodtype, totalbeg, begreceived)
+
+knitr::kable(head(begging))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">foodtype</th>
+<th align="right">totalbeg</th>
+<th align="right">begreceived</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">mussel</td>
+<td align="right">1</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="left">mussel</td>
+<td align="right">5</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">trout</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">crab</td>
+<td align="right">1</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="left">mussel</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">mussel</td>
+<td align="right">5</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
