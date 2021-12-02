@@ -22,7 +22,9 @@ Plots
 
 Script
 
-Rmd
 
 Git.ignore
 
+Jada-otter.Rproj
+
+README.rmd
