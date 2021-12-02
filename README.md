@@ -39,9 +39,9 @@ Answering any questions from classmates and making sure its in my data
   
   otter-analysis.R
   
-  otter-food-behavior.Rmd
+  otter-food-behavior.Rmd - mini project RMarkdown file
   
-  otter-food-behavior.html
+  otter-food-behavior.html - mini project Knit file
   
 
 **.gitignore**
@@ -49,5 +49,6 @@ Answering any questions from classmates and making sure its in my data
 the files that Git is ignoring as it travels back and forth
 
 **Jada-Otter.Rproj**
+
 
 **README.md**
