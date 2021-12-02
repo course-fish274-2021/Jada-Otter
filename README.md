@@ -15,3 +15,14 @@ Interpreting the data and explaining the importance
 Finding and inserting pictures of otters 
 Answering any questions from classmates and making sure its in my data
 
+
+Data 
+
+Plots
+
+Script
+
+Rmd
+
+Git.ignore
+
