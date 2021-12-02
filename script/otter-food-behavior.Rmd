@@ -9,14 +9,14 @@ Analysis of otter behavior with certain foods in a zoo.
 What food do the otters prefer more; trout, mussels, or crab? Do they Share the same food they beg the most for?
 
 
-# chunks
+# Programs loaded in
 
 ```{r, message=FALSE}
 library(dplyr)
 library(ggplot2)
 ```
 
-## Data
+## The original Data 
 
 ```{r, cache=TRUE}
 otter_data <- read.csv("../data/Bowden-ParryOtterdata.csv")
@@ -24,7 +24,9 @@ head(otter_data)
 ```
 
 
-## Analysis
+## Analysis 1
+
+Singling out the data I need for preferred foods
 
 What food do the otters prefer more; trout, mussels, or crab?
 using the columns of data, foodtype, totalbeg and begreceived.
@@ -43,7 +45,9 @@ begging <-
 knitr::kable(head(begging))
 ```
 
-## Plot
+## Plotting begged v recieved foods
+
+
 
 ```{r}
 ggplot(begging, aes(x = begreceived, y = totalbeg)) +
@@ -52,6 +56,13 @@ ggplot(begging, aes(x = begreceived, y = totalbeg)) +
   
 ```
 
+## Analysis 2
+
+Singling out data to see if they are sharing the food they are begging for the most
+
+```{r}
+
+```
 
 
 
