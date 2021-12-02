@@ -28,7 +28,21 @@ Plots:
   scale_hist_by_length.jpg - example data plot 
 
 Script:
-
+  
+  lecture-notes_cache/html
+  
+  otter-food-behavior_cache/html
+  
+  fish-analysis.R
+  
+  lecture-notes.Rmd
+  
+  otter-analysis.R
+  
+  otter-food-behavior.Rmd
+  
+  otter-food-behavior.html
+  
 
 .gitignore
 
