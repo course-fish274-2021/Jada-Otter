@@ -31,6 +31,9 @@ using the columns of data, foodtype, totalbeg and begreceived.
 making begreceived to be > 0 to exclude trials that did not receive food when they wanted it.
 making the totalbeg > 0 so I could see if the otters wanted that food or not.
 
+Total beg shows if the otters begged for that food
+Beg received shows if the Otter received the food they begged for
+
 ```{r}
 begging <-   
   otter_data %>%
@@ -39,6 +42,22 @@ begging <-
 
 knitr::kable(head(begging))
 ```
+
+## Plot
+
+```{r}
+ggplot(begging, aes(x = begreceived, y = totalbeg)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(~foodtype)
+  
+```
+
+
+
+
+
+
+
 
 
 
