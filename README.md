@@ -17,37 +17,31 @@ Finding and inserting pictures of otters
 Answering any questions from classmates and making sure its in my data
 
 
-Data: 
+**Data: **
 
   Bowden-ParryOtterdata.csv - Data on otters in zoo's and the food they beg for and share
   
   Gaeta_etal_CLC_data_1.csv - example data
 
-Plots:
+**Plots:**
 
   scale_hist_by_length.jpg - example data plot 
 
-Script:
+**Script:**
   
   lecture-notes_cache/html
-  
   otter-food-behavior_cache/html
-  
   fish-analysis.R
-  
   lecture-notes.Rmd
-  
   otter-analysis.R
-  
   otter-food-behavior.Rmd
-  
   otter-food-behavior.html
   
 
-.gitignore
+**.gitignore**
 
 the files that Git is ignoring as it travels back and forth
 
-Jada-Otter.Rproj
+**Jada-Otter.Rproj**
 
-README.md
+**README.md**
