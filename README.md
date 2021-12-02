@@ -30,11 +30,17 @@ Answering any questions from classmates and making sure its in my data
 **Script:**
   
   lecture-notes_cache/html
+  
   otter-food-behavior_cache/html
+  
   fish-analysis.R
+  
   lecture-notes.Rmd
+  
   otter-analysis.R
+  
   otter-food-behavior.Rmd
+  
   otter-food-behavior.html
   
 
