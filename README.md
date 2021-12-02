@@ -23,8 +23,8 @@ Plots
 Script
 
 
-Git.ignore
+.gitignore
 
-Jada-otter.Rproj
+Jada-Otter.Rproj
 
 README.rmd
