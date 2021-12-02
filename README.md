@@ -17,12 +17,15 @@ Answering any questions from classmates and making sure its in my data
 
 
 Data: 
+
   Bowden-ParryOtterdata.csv - Data on otters in zoo's and the food they beg for and share
   Gaeta_etal_CLC_data_1.csv - example data
 
-Plots
+Plots:
 
-Script
+  scale_hist_by_length.jpg - example data plot 
+
+Script:
 
 
 .gitignore
