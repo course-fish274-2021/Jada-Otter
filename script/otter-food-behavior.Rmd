@@ -61,10 +61,23 @@ ggplot(begging, aes(x = begreceived, y = totalbeg)) +
 Singling out data to see if they are sharing the food they are begging for the most
 
 ```{r}
+sharing <- 
+  otter_data %>% 
+  filter(begreceived > 0, sharingbybegonly > 0) %>% 
+  select(begreceived, sharingbybegonly, foodtype)
 
+knitr::kable(head(sharing))
 ```
 
 
+# plotting if the food was shared
+
+```{r}
+ggplot(sharing, aes(x = begreceived, y = sharingbybegonly)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(~foodtype)
+  
+```
 
 
 
