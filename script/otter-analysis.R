@@ -1,9 +1,11 @@
 
 
-otter_data <- read.csv("data/Bowden-ParryOtterdata.csv")
 
 library(dplyr)
 library(ggplot2)
+
+otter_data <- read.csv("data/Bowden-ParryOtterdata.csv")
+head(otter_data)
 
 #gather new information (answers to questions) regarding your dataset.
 #What food do the otters prefer more; trout, mussels, or crab?
@@ -11,14 +13,34 @@ library(ggplot2)
 #I need begreceived to be > 0 to exclude trials that did not receive food when they wanted it. 
 # I also made the totalbeg > 0 so I could see if the otters wanted that food or not. 
 
-otter_data %>%
+begging <-   
+  otter_data %>%
   filter(begreceived > 0, totalbeg > 0) %>% 
-  select(foodtype, totalbeg)
+  select(foodtype, totalbeg, begreceived)
 
-ggplot(otter_data) +
-  geom_histogram(data = otter_data, aes(x = foodtype, alpha = 0.3))
-  
+## Plotting begged v recieved foods
 
-  geom_histogram(data = otter_data, aes(x = crab, alpha = 0.3))+
-  geom_histogram(data = otter_data, aes(x = mussel, alpha = 0.3))+
+ggplot(begging, aes(x = begreceived, y = totalbeg)) +
+  geom_point(size = 3, alpha = 0.5) +
   facet_wrap(~foodtype)
+
+
+# Analysis 2
+
+sharing <- 
+  otter_data %>% 
+  filter(begreceived > 0, sharingbybegonly > 0) %>% 
+  select(begreceived, sharingbybegonly, foodtype)
+
+
+# plotting if the food was recieved
+
+ggplot(sharing, aes(x = begreceived, y = sharingbybegonly)) +
+  geom_point(size = 3, alpha = 0.5) +
+  facet_wrap(~foodtype)
+
+
+
+
+
+
