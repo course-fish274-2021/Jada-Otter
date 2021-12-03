@@ -35,7 +35,10 @@ Answering any questions from classmates and making sure its in my data
   
   otter-food-behavior.html - mini project Knit file
   
+  otter-food-behavior-slides.Rmd - mini project powerpoint
+  
   otter-food-behavior_cache/html
+  
   
   _Lecture-notes_ Folder with all lecture materials for this project
   
