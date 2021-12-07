@@ -7,23 +7,23 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Otter Knowledge
+## Sea Otter Knowledge
 
- Otters live in Coastal Marine Habitats
+ Sea Otters live in Coastal Marine Habitats
  
- with a diet consisting of sea urchins, snails, clams, mussels, crabs, scallops, fish, barnacles, octopus, and squid
+ with a diet consisting of sea urchins, snails, clams, mussels, crabs, scallops, fish, barnacles, octopus
  
  these otters are in zoo's
  
  
-## A Picture
+## Sea Otter Eating 
 
-![Sea Otter Eating (Photo credit: David A. Jessup)](https://www.seaotters.com/wp-content/uploads/2012/08/640x360-olive-eating-black-abalone.jpg)
+![(Photo credit: David A. Jessup)](https://www.seaotters.com/wp-content/uploads/2012/08/640x360-olive-eating-black-abalone.jpg)
 
 ## Slide with Bullets
 
-- Bullet 1
-- Bullet 2
+- What food do the otters prefer more; trout, mussels, or crab?
+- Do they Share the same food they beg the most for?
 - Bullet 3
 
 ## Slide with R Output
