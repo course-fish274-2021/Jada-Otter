@@ -71,6 +71,12 @@ ggplot(begging, aes(x = totalbeg)) +
 ```
 
 
+### what does that mean?
+
+ - mussels
+ - crab 
+ - trout
+
 
 
 ## Analysis 2
@@ -98,7 +104,13 @@ ggplot(sharing, aes(x = begreceived, y = sharingbybegonly)) +
 
 
 
-
+```{r}
+ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1) +
+  facet_wrap(~foodtype)
+  
+```
 
 
 

@@ -20,11 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![(Photo credit: David A. Jessup)](https://www.seaotters.com/wp-content/uploads/2012/08/640x360-olive-eating-black-abalone.jpg)
 
-## Slide with Bullets
+## Question
 
 - What food do the otters prefer more; trout, mussels, or crab?
 - Do they Share the same food they beg the most for?
-- Bullet 3
+
 
 ## Slide with R Output
 
