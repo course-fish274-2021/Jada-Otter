@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = FALSE)
  
 ## A Picture
 
-
+![otter](https://www.seaotters.com/wp-content/uploads/2012/08/640x360-olive-eating-black-abalone.jpg
 
 ## Slide with Bullets
 
