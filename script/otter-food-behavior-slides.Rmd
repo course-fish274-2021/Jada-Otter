@@ -1,5 +1,5 @@
 ---
-title: "otter-food-behavior"
+title: "Otter food behavior"
 output: ioslides_presentation
 ---
 
@@ -7,11 +7,13 @@ output: ioslides_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## R Markdown
+## Otter Knowledge
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+ Otters live in Coastal Marine Habitats
+ 
+ with a diet consisting of sea urchins, snails, clams, mussels, crabs, scallops, fish, barnacles, octopus, and squid
+ 
+ these otters are in zoo's
 
 ## Slide with Bullets
 
