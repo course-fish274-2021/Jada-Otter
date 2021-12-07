@@ -48,9 +48,9 @@ knitr::kable(head(begging))
 ## Plotting begged v recieved foods
 
 ```{r}
-ggplot(begging, color = foodtype, aes(x = begreceived, y = totalbeg)) +
-  geom_point(alpha = 0.2) +
-  geom_jitter(size = 1, width = 0.7, height = 0.7)
+ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1)
   
 ```
 
