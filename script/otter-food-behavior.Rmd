@@ -119,3 +119,36 @@ Did the otters share the food they begged the most for?
  - also shared the food the begged theleast for
 
 
+
+
+
+
+### messing with ALL the data
+
+```{r}
+ggplot(otter_data, aes(x = fooddensity, y = totalbeg, color = ID)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1) +
+  facet_wrap(~ID)
+
+```  
+
+
+
+```{r}
+ggplot(otter_data, aes(x = fooddensity, y = totalbeg, color = ID)) +
+  geom_point() +
+  geom_jitter(size = 0.5, width = 1, height = 1) +
+  facet_wrap(~ID)
+
+```  
+
+
+
+
+
+
+
+
+
+
