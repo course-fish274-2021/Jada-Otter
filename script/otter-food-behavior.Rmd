@@ -112,5 +112,9 @@ ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
   
 ```
 
+## What?
 
+Did the otters share the food they begged the most for?
+ - yes
+ - also shared the food the begged theleast for
 
