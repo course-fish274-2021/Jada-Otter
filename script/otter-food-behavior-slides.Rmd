@@ -3,8 +3,13 @@ title: "Otter food behavior"
 output: ioslides_presentation
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r, message=FALSE, echo=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r, cache=TRUE, echo=FALSE}
+otter_data <- read.csv("../data/Bowden-ParryOtterdata.csv")
 ```
 
 ## Sea Otter Knowledge
@@ -26,15 +31,72 @@ knitr::opts_chunk$set(echo = FALSE)
 - Do they Share the same food they beg the most for?
 
 
-## Slide with R Output
+## Analysis 1
 
-```{r cars, echo = TRUE}
-summary(cars)
+```{r, echo=FALSE}
+begging <-   
+  otter_data %>%
+  filter(begreceived > 0, totalbeg > 0) %>% 
+  select(foodtype, totalbeg, begreceived)
+
+knitr::kable(head(begging))
 ```
 
-## Slide with Plot
 
-```{r pressure}
-plot(pressure)
+
+## Food preference
+
+```{r}
+ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1)
+  
 ```
+
+
+## what does that mean?
+
+ - mussels
+ - crab 
+ - trout
+
+
+
+
+
+# Analysis 2 
+
+```{r}
+sharing <- 
+  otter_data %>% 
+  filter(begreceived > 0, sharingbybegonly > 0) %>% 
+  select(begreceived, sharingbybegonly, foodtype)
+
+knitr::kable(head(sharing))
+```
+
+
+# was the food shared 
+
+```{r}
+ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1) +
+  facet_wrap(~foodtype)
+  
+```
+
+
+## What?
+
+Did the otters share the food they begged the most for?
+ - yes
+ - also shared the food the begged theleast for
+
+
+
+
+
+
+
 
