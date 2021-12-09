@@ -60,3 +60,5 @@ the files that Git is ignoring as it travels back and forth
 
 
 **README.md**
+
+**images** picture text file
