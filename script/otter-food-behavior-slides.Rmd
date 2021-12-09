@@ -55,7 +55,7 @@ ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
 ```
 
 
-## what does that mean?
+## What does that mean?
 
  - otters begged for the mussels the most 
  - crab 
@@ -76,7 +76,7 @@ knitr::kable(head(sharing))
 ```
 
 
-## was the food shared 
+## Was the food shared? 
 
 ```{r, echo=FALSE, cache=TRUE}
 ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +

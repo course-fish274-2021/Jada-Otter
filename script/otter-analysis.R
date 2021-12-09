@@ -20,9 +20,9 @@ begging <-
 
 ## Plotting begged v recieved foods
 
-ggplot(begging, aes(x = begreceived, y = totalbeg)) +
-  geom_point(size = 3, alpha = 0.5) +
-  facet_wrap(~foodtype)
+ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
+  geom_point() +
+  geom_jitter(size = 2, width = 1, height = 1)
 
 
 # Analysis 2
@@ -33,7 +33,7 @@ sharing <-
   select(begreceived, sharingbybegonly, foodtype)
 
 
-# plotting if the food was recieved
+# plotting if the food was shared
 
 ggplot(sharing, aes(x = begreceived, y = sharingbybegonly)) +
   geom_point(size = 3, alpha = 0.5) +
