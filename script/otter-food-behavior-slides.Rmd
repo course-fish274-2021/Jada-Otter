@@ -63,7 +63,7 @@ ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
 
 
 
-# Analysis 2 
+## Analysis 2 
 Do they Share the same food they beg the most for?
 
 ```{r, echo=FALSE, cache=TRUE}
@@ -76,7 +76,7 @@ knitr::kable(head(sharing))
 ```
 
 
-# was the food shared 
+## was the food shared 
 
 ```{r, echo=FALSE, cache=TRUE}
 ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
