@@ -32,8 +32,9 @@ otter_data <- read.csv("../data/Bowden-ParryOtterdata.csv")
 
 
 ## Analysis 1
+What food do the otters prefer more; trout, mussels, or crab?
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, cache=TRUE}
 begging <-   
   otter_data %>%
   filter(begreceived > 0, totalbeg > 0) %>% 
@@ -46,7 +47,7 @@ knitr::kable(head(begging))
 
 ## Food preference
 
-```{r}
+```{r, echo=FALSE, cache=TRUE}
 ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
   geom_point() +
   geom_jitter(size = 2, width = 1, height = 1)
@@ -56,17 +57,16 @@ ggplot(begging, aes(x = begreceived, y = totalbeg, color = foodtype)) +
 
 ## what does that mean?
 
- - mussels
+ - otters begged for the mussels the most 
  - crab 
- - trout
-
-
+ - begged for trout the least
 
 
 
 # Analysis 2 
+Do they Share the same food they beg the most for?
 
-```{r}
+```{r, echo=FALSE, cache=TRUE}
 sharing <- 
   otter_data %>% 
   filter(begreceived > 0, sharingbybegonly > 0) %>% 
@@ -78,7 +78,7 @@ knitr::kable(head(sharing))
 
 # was the food shared 
 
-```{r}
+```{r, echo=FALSE, cache=TRUE}
 ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
   geom_point() +
   geom_jitter(size = 2, width = 1, height = 1) +
@@ -90,8 +90,8 @@ ggplot(sharing, aes(x = begreceived, y = sharingbybegonly, color = foodtype)) +
 ## What?
 
 Did the otters share the food they begged the most for?
+
  - yes
- - also shared the food the begged theleast for
 
 
 
