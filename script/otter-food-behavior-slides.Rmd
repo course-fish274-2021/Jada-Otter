@@ -3,7 +3,7 @@ title: "Otter food behavior"
 output: ioslides_presentation
 ---
 
-```{r, message=FALSE, echo=FALSE}
+```{r, message=FALSE, echo=FALSE, warning=FALSE}
 library(dplyr)
 library(ggplot2)
 ```
